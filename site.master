@@ -1,0 +1,289 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="site" %>
+
+<%@ Register TagPrefix="asp" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <link href="assets/styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/styles/slick.css" rel="stylesheet" />
+    <link href="assets/styles/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/styles/responsive-tables.css" rel="stylesheet" />
+
+    <%--<link rel="stylesheet" type="text/css" href="assets/styles/owl.carousel.min.css" />--%>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <style type="text/css">
+            .corner
+            { 
+                behavior: url(PIE.htc); 
+            }
+            .fullbox-img
+            {
+	            -ms-behavior: url(backgroundsize.min.htc);
+	            behavior: url(backgroundsize.min.htc);
+            }
+        </style>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- JW Player -->
+    <%--<script src="assets/js/jwplayer.js"></script>
+    <script src="assets/js/key.js"></script>
+    <script type="text/javascript">jwplayer.key = "5qMQ1qMprX8KZ79H695ZPnH4X4zDHiI0rCXt1g==";</script>--%>
+    <!--main style-->
+    <link href="assets/styles/fonts.css" rel="stylesheet" />
+    <link href="assets/styles/site.css" rel="stylesheet" />
+    <link href="assets/styles/site-respon.css" rel="stylesheet" />
+    <!--end main style-->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--active menu-->
+    <script type="text/javascript">
+        function changeActiveMenu(page) {
+            $('#menu li').removeClass("active");
+            $('#menu li a[href*="' + page + '"]').parent("li").addClass("active");
+        }
+        function changeSubActiveMenu(page) {
+            $('#menu li li').removeClass("active");
+            $('#menu li li a[href$="' + page + '"]').parents("li").addClass("active");
+            $('.menu-list li').removeClass("active");
+            $('.menu-list li a[href$="' + page + '"]').parents("li").addClass("active");
+            var value1 = $('a.a-link-sp').attr('href');
+            $('#menu li li a[href$="' + value1 + '"]').parents("li").addClass("active");
+            $('.menu-list li a[href$="' + value1 + '"]').parents("li").addClass("active");
+            var value2 = $('a.a-link-spc').attr('href');
+            $('#menu li li a[href$="' + value2 + '"]').parents("li").addClass("active");
+            $('.menu-list li a[href$="' + value2 + '"]').parents("li").addClass("active");
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ToolkitScriptManager>
+        <div id="wrapper">
+            <div id="wrapper-in">
+                <div id="header">
+                    <div class="container">
+                        <div class="left-head">
+                            <div class="logo">
+                                <a href="~/" runat="server">
+                                    <img src="assets/images/logo.png" alt="" />
+                                </a>
+                                <p>Mách bạn mua hàng Nhật đúng cách</p>
+                            </div>
+                            <div class="more-left">
+                                <p class="phone">HOTLINE tại Việt Nam<span><a href="tel:19007163">1900-7163</a></span></p>
+                                <p class="yen"><a href="Exchange.aspx">JPY = <span id="exrate"><%= Session["Exrate"] %></span> VNĐ</a></p>
+                            </div>
+                        </div>
+                        <div class="right-head">
+                            <div class="top">
+                                <ul>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd-8qC7Wr9ev1j17ZzsmsH_bdXdt__2zdLIAh6kT90dPLUB9A/viewform" target="_blank">Đăng ký</a></li>
+                                    <li><a href="javascript:void(0);">Tiếng Việt</a>
+                                        <i class="fa fa-caret-down"></i>
+                                        <ul>
+                                            <li><a href="#">Tiếng Anh</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul id="menu" class="desktop-992">
+                                <li><a href="Usage-Guide.aspx">Hướng dẫn</a>
+                                    <%--<ul>
+                                        <li><a href="#">content</a></li>
+                                        <li><a href="#">content</a></li>
+                                        <li><a href="#">content</a></li>
+                                    </ul>--%>
+                                </li>
+                                <li><a href="service.aspx">Phí dịch vụ</a></li>
+                                <li><a href="FAQ.aspx">FAQs</a></li>
+                                <li><a href="contact.aspx">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="head-mo">
+                        <div class="container">
+                            <div class="menu-toggle">
+                                <span class="fa fa-reorder"></span>
+                            </div>
+                            <div class="logo-mobile">
+                                <a href="~/" runat="server">
+                                    <img src="assets/images/logo.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="lang">
+                                <a href="#">ENG</a>
+                            </div>
+                        </div>
+                        <div class="content-menu-mo">
+                            <div class="head">
+                                <div class="logo">
+                                    <a href="~/" runat="server">
+                                        <img src="assets/images/logo-mo.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hotline">
+                                    <p>Hotline: 1900-7163</p>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <a href="~/" runat="server">
+                                            <i><img src="assets/images/mo-home.png" alt="" /></i>
+                                            Trang chủ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Exchange.aspx">
+                                            <i><img src="assets/images/mo-tigia.png" alt="" /></i>
+                                            Tỉ giá
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Usage-Guide.aspx">
+                                            <i><img src="assets/images/mo-huongdan.png" alt="" /></i>
+                                            Hướng dẫn
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.aspx">
+                                            <i><img src="assets/images/mo-phi.png" alt="" /></i>
+                                            Phí dịch vụ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="FAQ.aspx">
+                                            <i><img src="assets/images/mo-faq.png" alt="" /></i>
+                                            FAQs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.aspx">
+                                            <i><img src="assets/images/mo-lienhe.png" alt="" /></i>
+                                            Liên hệ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copy-right-mo">
+                                <div class="top">
+                                    <a href="https://www.facebook.com/japanex.net/">
+                                        <img src="assets/images/fb.png" alt="" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/yt.png" alt="" />
+                                    </a>
+                                </div>
+                                <p>Copyright©2017, Better Life Co., Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div id="main-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <footer id="footer">
+                    <div class="container">
+                        <div class="tt-cty">
+                            <a href="#">
+                                <img src="assets/images/logo-footer.png" alt="" /></a>
+                            <h3>TỔNG ĐÀI HỖ TRỢ KHÁCH HÀNG TẠI VIỆT NAM</h3>
+                            <p class="local">67 Lê Trung Nghĩa, Phường 12, Quận Tân Bình</p>
+                            <p class="phone">1900 7163</p>
+                            <p class="web">www.japanex.net</p>
+                            <p class="mail">contact@japanex.net</p>
+                        </div>
+                        <div class="time-work">
+                            <p>Giờ làm việc:</p>
+                            <span>Thứ 2-7: 8:00 AM - 5:00 PM</span>
+                            <ul>
+                                <li><a href="Usage-Guide.aspx">Hướng dẫn</a></li>
+                                <li><a href="service.aspx">Phí dịch vụ</a></li>
+                                <li><a href="FAQ.aspx">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="connectdevelop">
+                            <p>
+                                <a href="https://www.facebook.com/japanex.net/" target="_blank">
+                                    <img src="assets/images/fb.png" alt="" /></a>
+                                <a href="#">
+                                    <img src="assets/images/yt.png" alt="" /></a>
+                            </p>
+                            <div class="form-group">
+                                <p>Đăng ký nhận thông tin qua Email</p>
+                                <asp:TextBox ID="txtNhanEmail" runat="server"></asp:TextBox>
+                                <asp:TextBoxWatermarkExtender ID="txtEmail_WatermarkExtender" runat="server" Enabled="True"
+                                    WatermarkText="Email..." TargetControlID="txtNhanEmail">
+                                </asp:TextBoxWatermarkExtender>
+                                <asp:RegularExpressionValidator CssClass="lb-error" ID="RegularExpressionValidator1"
+                                    runat="server" ValidationGroup="SendEmail" ControlToValidate="txtNhanEmail" ErrorMessage="Email không đúng!"
+                                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"
+                                    ForeColor="Red"></asp:RegularExpressionValidator>
+                                <asp:RequiredFieldValidator CssClass="lb-error" ID="RequiredFieldValidator3" runat="server"
+                                    ValidationGroup="SendEmail" ControlToValidate="txtNhanEmail" ErrorMessage="Thông tin bắt buộc!"
+                                    Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                                <asp:Button ID="btnGui" runat="server" Text="Gửi" OnClick="btnGui_Click" ValidationGroup="SendEmail" />
+                            </div>
+                            <p class="copyright">Copyright©2017, Better Life Co., Ltd</p>
+                        </div>
+                        <div class="footer-mobile">
+                            <a href="#">
+                                <img src="assets/images/logo-footer.png" alt="" />
+                            </a>
+                            <h4>TỔNG ĐÀI HỖ TRỢ KHÁCH HÀNG TẠI VIỆT NAM</h4>
+                            <p>67 Lê Trung Nghĩa, Phường 12, Quận Tân Bình, TP.HCM</p>
+                            <div class="box">
+                                <div class="wrap-box">
+                                    <p>1900 7163</p>
+                                    <a href="#">www.japanex.net</a>
+                                    <a href="#">contact@japanex.net</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="wrap-box">
+                                    <p>Giờ làm việc:</p>
+                                    <h4>Thứ 2 - 7 <br />
+                                    8:00 AM - 5:00 PM
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <a href="#" class="scroll-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+        <div id="runScript" runat="server"></div>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.js"></script>
+        <script src="assets/js/smartpaginator.js"></script>
+        <script src="assets/js/responsive-tables.js"></script>
+        <!-- main js -->
+        <script src="assets/js/jquery.main.js"></script>
+
+        <!-- end main js -->
+    </form>
+</body>
+</html>

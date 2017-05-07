@@ -1,0 +1,101 @@
+﻿@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Hairline.eot');
+  src: url('../fonts/font-web/Lato-Hairline.woff') format('woff'),
+       url('../fonts/font-web/Lato-Hairline.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Hairline.svg#Lato-Hairline') format('svg'),
+       url('../fonts/font-web/Lato-Hairline.eot?#iefix') format('embedded-opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Light.eot');
+  src: url('../fonts/font-web/Lato-Light.woff') format('woff'),
+       url('../fonts/font-web/Lato-Light.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Light.svg#Lato-Light') format('svg'),
+       url('../fonts/font-web/Lato-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Regular.eot');
+  src: url('../fonts/font-web/Lato-Regular.woff') format('woff'),
+       url('../fonts/font-web/Lato-Regular.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Regular.svg#Lato-Regular') format('svg'),
+       url('../fonts/font-web/Lato-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Medium.eot');
+  src: url('../fonts/font-web/Lato-Medium.woff') format('woff'),
+       url('../fonts/font-web/Lato-Medium.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Medium.svg#Lato-Medium') format('svg'),
+       url('../fonts/font-web/Lato-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Bold.eot');
+  src: url('../fonts/font-web/Lato-Bold.woff') format('woff'),
+       url('../fonts/font-web/Lato-Bold.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Bold.svg#Lato-Bold') format('svg'),
+       url('../fonts/font-web/Lato-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Heavy.eot');
+  src: url('../fonts/font-web/Lato-Heavy.woff') format('woff'),
+       url('../fonts/font-web/Lato-Heavy.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Heavy.svg#Lato-Heavy') format('svg'),
+       url('../fonts/font-web/Lato-Heavy.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Black.eot');
+  src: url('../fonts/font-web/Lato-Black.woff') format('woff'),
+       url('../fonts/font-web/Lato-Black.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Black.svg#Lato-Black') format('svg'),
+       url('../fonts/font-web/Lato-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-BlackItalic.eot');
+  src: url('../fonts/font-web/Lato-BlackItalic.woff') format('woff'),
+       url('../fonts/font-web/Lato-BlackItalic.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-BlackItalic.svg#Lato-BlackItalic') format('svg'),
+       url('../fonts/font-web/Lato-BlackItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/font-web/Lato-Italic.eot');
+  src: url('../fonts/font-web/Lato-Italic.woff') format('woff'),
+       url('../fonts/font-web/Lato-Italic.ttf') format('truetype'),
+       url('../fonts/font-web/Lato-Italic.svg#Lato-Italic') format('svg'),
+       url('../fonts/font-web/Lato-Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UVNBachTuyet';
+  src: url('../fonts/font-web/UVNBachTuyet.eot');
+  src: url('../fonts/font-web/UVNBachTuyet.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/font-web/UVNBachTuyetBold.woff') format('woff'),
+       url('../fonts/font-web/UVNBachTuyetBold.ttf') format('truetype'),
+       url('../fonts/font-web/UVNBachTuyetBold.svg#UVNBachTuyetBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

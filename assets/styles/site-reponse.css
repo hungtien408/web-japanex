@@ -1,0 +1,1760 @@
+﻿a:link, a:visited,
+a:hover, a:focus
+{
+    outline: none;
+    text-decoration: none;
+}
+/*================*/
+ .box-bar-site .col-sm-3
+    {
+        margin-left: -45px;
+        padding: 0;
+    }
+    /*#wraprun .col-sm-3
+    {
+        margin-left: -45px;
+        padding: 0;
+    }
+    #list-run2 .col-sm-4
+    {
+        margin-left: -25px;
+        padding: 0;
+    }*/
+    #wraprun
+    {
+        overflow: hidden;
+    }
+/* Large desktop */
+@media (min-width: 1200px)  
+{
+    .text-sologan
+    {
+        font-size: 16px;
+    }
+    #menu > li.first
+    {
+        margin-left: 200px;
+    }
+    #menu .dropdown
+    {
+        display: none;
+    }
+    .dropdown-menu
+    {
+        height:0;
+    }
+    .navbar-collapse.in
+    {
+        overflow: visible;
+        height: 40px;
+    }
+    .box-bar-site .col-sm-offset-1
+    {
+        margin-left: 10%;
+    }
+    #wraprun.box-bar-site
+    {
+        padding-bottom: 100px;
+    }
+    .box-bar-site .col-sm-3
+    {
+        height: 290px;
+        width: 290px;
+    }
+    #our-customers.customers-site
+    {
+        padding-bottom: 72px;
+    }
+    #our-customers .cus-title-2
+    {
+        padding-bottom: 65px;
+    }
+    #cus-info .comm
+    {
+        padding-top: 90px;
+    }
+    #what-cus.comm .title-2
+    {
+        width: 820px;
+    }
+    #new-project.project-site
+    {
+        padding: 50px 0 53px;
+    }
+    #new-project.project-site .row-pro
+    {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    #new-project.project-site .row-pro-title
+    {
+        margin-left: 8px;
+    }
+    #footer #address-box 
+    {
+        width: 355px;
+    }
+    /*#footer #list-box
+    {
+        width: 294px;
+    }*/
+    .wrapper
+    {
+        margin: 0 auto;
+        width: 1200px;
+    }
+    #hotline
+    {
+    }
+    #list-face
+    {
+        padding-right: 15px;
+    }
+    #wrap-ll
+    {
+        top: -45px;
+        position: relative;
+    }
+    #cases-wrap.making-cases .title-2
+    {
+        text-align: left;
+        padding-bottom: 24px;
+        padding-left: 15px;
+    }
+    #cases-wrap.making-cases
+    {
+        padding: 0;
+        width: 1212px;
+    }
+    #cases-wrap.making-cases .row
+    {
+        margin: 0;
+        width: 1212px;
+    }
+    #cases-wrap.making-cases .row .col-lg-6
+    {
+        padding: 0;
+        margin-left: 18px ;
+        margin-right: 18px;
+        width: 570px;
+    }
+    .wraper-pager
+    {
+        padding-top: 18px;
+        padding-bottom: 48px;
+    }
+    #cus-info.make-cus
+    {
+        padding-top: 27px;
+    }
+    #cus-info.make-cus .title-2
+    {
+        padding-left: 143px;
+        padding-bottom: 37px;
+    }
+    #phone-num.make-phone
+    {
+        /*padding-top: 45px;*/
+        padding-bottom: 36px;
+    }
+    #wrap-about .col-sm-7
+    {
+        padding-left: 0;
+    }
+    #what-cus
+    {
+        background: url(../images/cus-img.jpg) no-repeat right 40px;
+        padding-top: 40px;
+    }
+    
+    #new-project .col-md-4, #new-project .col-sm-4
+    {
+        padding: 0;
+    }
+    #what-cus .bx-wrapper .bx-controls-direction .bx-prev 
+    {
+        left: -40px !important;
+        top: 40%  !important;
+        margin: 0 !important;
+    }
+    #what-cus .bx-wrapper .bx-controls-direction .bx-next 
+    {
+        display: none !important;
+    }
+    #list-run .col-lg-3, #list-run2 .col-lg-4
+    {
+        padding: 0;
+        text-align:center;
+    }
+    #list-run2 .col-lg-4
+    {
+        padding: 0;
+        margin-left:-60px;
+    }
+    #list-markerting
+    {
+        background: url(../images/mar-img-bg.jpg) no-repeat right bottom;
+    }
+    #list-markerting .heading
+    {
+        margin-top: 115px;
+    }
+    #wrap-about .container, #wrap-about .row
+    {
+        padding: 0px;
+        margin: 0;
+    }
+    #fee-cus .bx-wrapper .bx-controls-direction .bx-prev
+    {
+        left: -40px !important;
+    }
+    #fee-cus .bx-wrapper .bx-controls-direction .bx-next
+    {
+        right: -40px !important;
+    }
+    .images-about
+    {
+        margin-right: -185px;
+    }
+    #our-pos.our-about .col-md-6
+    {
+        width: 605px;
+    }
+    #our-pos .jumbotron blockquote
+    {
+        margin-right: 200px;
+    }
+    #cus-our
+    {
+        margin-bottom: 45px;
+    }
+    #cus-our.seo-pro
+    {
+        background: #fff url(../images/main-pro.png) repeat-x left top;
+    }
+    #seo-process.container
+    {
+        padding: 0;
+    }
+    #seo-process .col-md-7
+    {
+        padding-left: 0;
+    }
+    .wrap-people
+    {
+        margin: 0 40px;
+    }
+    #banner-slider .wrap-text
+    {
+        padding-top: 60px;
+    }
+    #banner-slider .iteam
+    {
+        color: #666;
+        padding: 20px 0;
+        text-align: left;
+    }
+    #banner-slider .iteam .title-t
+    {
+        color: #000;
+        text-align: left;
+    }
+    #banner-slider .newsb
+    {
+        color: #c1c1c1;
+    }
+    #banner-slider .newsb .title-t
+    {
+        color: #fff;
+        display: block;
+    }
+    #why-us span
+    {
+        width: 565px;
+    }
+    #contact-wrap .con-a
+    {
+        padding-top: 125px;
+    }
+    #what-make.make-about .jumbotron
+    {
+        padding: 50px 158px 20px;
+    }
+    #why-us.a-m-1 .col-sm-offset-3
+    {
+        margin-left: 22%;
+    }
+    #some-box .jumbotron
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #some-box .jumbotron p
+    {
+        padding-left: 20px;
+    }
+    .customers-site .col-sm-2
+    {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .customers-site .col-sm-2 a
+    {
+        height: 166px;
+        width: 166px;
+    }
+    /*==========*/
+    #banner-slider.about
+    {
+        margin-top: 8px;
+    }
+    #banner-slider.about .wrap-text3
+    {
+        top: 31%;
+    }
+    #why-us.about .tr-1
+    {
+        margin-top: 19px;
+    }
+    #our-pos.our-about
+    {
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }
+    #our-pos.our-about .node-about
+    {
+        padding: 22px 5px;
+    }
+    .images-about
+    {
+        margin-top: 40px;
+    }
+    #what-make.make-about .title-2
+    {
+        padding-top: 3px;
+        padding-bottom: 20px;
+    }
+    .who-name
+    {
+        padding-top: 13px;
+        padding-bottom: 10px;
+    }
+    #list-user.about
+    {
+        padding-bottom: 25px;
+    }
+    #phone-num .about
+    {
+        padding-top: 40px;
+        padding-bottom: 44px;
+    }
+    #phone-num .about .node
+    {
+        padding-bottom: 10px;
+    }
+    /*=========*/
+    #banner-slider .wrap-text4
+    {
+        padding-top: 2px;
+    }
+    #search-menu a
+    {
+        padding: 0 23px;
+    }
+    #new-project.projectb
+    {
+        padding-bottom: 0;
+    }
+    /*==========*/
+    .title-2b
+    {
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+    #new-project.out-active .row
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #new-project.out-active .title-2
+    {
+        margin-bottom: 25px;
+    }
+    #new-project.out-active .project-name
+    {
+        padding-top: 22px;
+    }
+    #new-project.out-active .project-web
+    {
+        margin-bottom: 55px;
+    }
+    #phone-num.acti
+    {
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
+    #phone-num.acti .node
+    {
+        margin-bottom: 13px;
+    }
+    /*=============*/
+    #career-box .jumbotron .node
+    {
+        padding-top: 2px;
+    }
+    #career-box .jumbotron
+    {
+        margin-bottom: 22px;
+    }
+    #list-career .col-sm-4
+    {
+        margin-bottom: 30px;
+    }
+    #phone-num .care .node
+    {
+        padding-bottom: 5px;
+    }
+    #phone-num .care
+    {
+        padding-bottom: 46px;
+    }
+    /*===========*/
+    #contact-wrap .title-3
+    {
+        padding-bottom: 7px;
+    }
+    #contact .text-arean
+    {
+        height: 340px;
+    }
+    #contact-wrap
+    {
+        padding-bottom: 70px;
+    }
+    #phone-num .contact
+    {
+        margin-top: 20px;
+        margin-bottom: 19px;
+    }
+    #phone-num .contact .node
+    {
+        padding-bottom: 5px;
+    }
+    /*=======*/
+    #seo-about
+    {
+        padding-bottom: 62px;
+    }
+    #seo-about .col-md-4
+    {
+        padding-right: 0;
+        width: 420px;
+    }
+    #seo-about .col-md-8
+    {
+        width: 760px;
+    }
+    #seo-about .description
+    {
+        padding-top: 15px;
+        padding-bottom: 38px;
+    }
+    .seo-about-img
+    {
+        padding-top: 70px;
+    }
+    #seo-process.seo-pro
+    {
+        margin-bottom: 25px;
+    }
+    #cus-our.seo-pro .title-2
+    {
+        padding-top: 5px;
+        padding-bottom: 48px;
+    }
+    #cus-our.seo-pro .project-name
+    {
+        padding-top: 1px;
+        padding-bottom: 3px;
+    }
+    #phone-num .seo-pro
+    {
+        padding-top: 27px;
+    }
+    #phone-num .seo-pro .node
+    {
+        padding-bottom: 18px;
+    }
+    #phone-num .seo-pro .node strong
+    {
+        font-style: normal;
+    }
+    /*==============*/
+    #banner-slider .ito
+    {
+        padding-top: 55px;
+    }
+    #banner-slider .ito .title-t
+    {
+        padding-top: 25px;
+    }
+    #what-make .it-out-make
+    {
+        padding-top: 85px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 25px;
+    }
+    #what-make .it-out-make p
+    {
+        line-height: 27px;
+    }
+    #what-make .it-out-make h4
+    {
+        padding-bottom: 19px;
+    }
+    #why-us.ito
+    {
+        padding-bottom: 27px;
+    }
+    #fee-cus.ito .title-2
+    {
+        margin-bottom: 7px;
+    }
+    #fee-cus.ito
+    {
+        margin-bottom: 60px;
+    }
+    #phone-num .ito .node
+    {
+        padding-bottom: 7px;
+    }
+    #phone-num .ito
+    {
+        padding-bottom: 45px;
+    }
+    /*===========*/
+    #what-make .websoft
+    {
+        padding-bottom: 80px;
+    }
+    #what-make .websoft .title-2
+    {
+        line-height: 40px;
+        padding-bottom: 26px;
+    }
+    #what-make .websoft p
+    {
+        line-height: 28px;
+    }
+    #new-project.websoft .title-2
+    {
+        padding-bottom: 10px;
+    }
+    #new-project.websoft .row
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #new-project.websoft .project-web
+    {
+        padding-top: 4px;
+        margin-bottom: 37px;
+    }
+    #work-pro .images-web
+    {
+        padding-bottom: 70px;
+    }
+    #cus-info.webs
+    {
+        padding-top: 48px;
+    }
+    #cus-info.webs .title-2
+    {
+        padding-left: 180px;
+        margin-bottom: 5px;
+    }
+    #cus-info.webs  .website
+    {
+        margin-bottom: 15px;
+    }
+    #cus-info.webs .jumbotron
+    {
+        padding-top: 80px;
+        padding-bottom: 45px;
+    }
+    #cus-info.webs .node
+    {
+        padding-bottom: 40px;
+    }
+    /*========*/
+    #meet-train .title-2
+    {
+        padding-top: 19px;
+        padding-bottom:10px;
+    }
+    #meet-train .people-img, #meet-train .box-people
+    {
+        width: 216px;
+    }
+    #meet-train .people-img img
+    {
+        width: 216px;
+    }
+    #traing-box
+    {
+        padding-top: 55px;
+        padding-bottom: 78px;
+    }
+    #traing-box .col-md-4
+    {
+        width: 320px;
+    }
+    #traing-box .box-train
+    {
+        padding-top: 8px;
+        padding-bottom: 78px;
+    }
+    #traing-box .title-5a.title-l5
+    {
+        padding-bottom: 10px;
+    }
+    #traing-box2
+    {
+        padding-top: 60px;
+        padding-bottom: 64px;
+    }
+    #traing-box2 .train-node
+    {
+        padding-top: 15px;
+        padding-bottom: 32px;
+    }
+    #traing-box2 .traning-cus .title-5a
+    {
+        padding-bottom: 3px;
+    }
+    #phone-num .training
+    {
+        margin-top: 2px;
+        padding-bottom: 45px;
+    }
+    #phone-num .training .node
+    {
+        padding-bottom: 4px;
+    }
+    /*==========goc tu van=======*/
+    .container-wrap
+    {
+        width: 1140px;
+    }
+    .box-text
+    {
+        width: 380px;
+    }
+    .box-1 .box-cons
+    {
+        height: auto;
+        width: 100%;
+    }
+    .box-text .box-content
+    {
+        height: 380px;
+    }
+    /*=====================*/
+    #productDetail {
+        width: 1100px;
+    }
+    #processMobile {
+        display: none;
+    }
+    
+    #jumbotron-1
+    {
+        width:700px;   
+        margin:0 auto !important; 
+    }
+}
+@media screen and (max-width:1200px) {
+    /*========================*/
+    #all-service .item {
+        width:calc(33.33333% - 4px);
+        margin-right:0;
+    }
+}
+@media screen and (max-width:980px) {
+    /*========================*/
+    #all-service .item {
+        width:100%;
+        margin-right:0;
+    }
+}
+
+@media (min-width: 980px)
+{
+    .wrap-container
+    {
+        margin: 0 auto;
+        width: 960px;
+    }
+}
+@media (min-width: 981px) and (max-width: 1199px)  
+{
+    #menu > li.first
+    {
+        margin-left: 160px;
+    }
+    #menu > li > a
+    {
+        padding: 0 12px;
+    }
+    .navbar-collapse.in
+    {
+        overflow: visible;
+        height: 40px;
+    }
+    .box-bar-site .col-sm-offset-1
+    {
+        margin-left: 4%;
+    }
+    .box-bar-site .col-sm-offset-2
+    {
+        margin-left: 16%;
+    }
+    .box-bar-site .col-sm-3
+    {
+        margin-left: -35px;
+        height: 260px;
+        width: 260px;
+        padding: 0;
+    }
+    #list-face
+    {
+        padding-right: 15px;
+    }
+    #faceboox-box
+    {
+        float: left;
+        width: 100%;
+    }
+    #new-project .col-md-4, #new-project .col-sm-4
+    {
+        padding: 0;
+    }
+    #list-markerting
+    {
+        background: url(../images/mar-img-bg.jpg) no-repeat right bottom;
+    }
+    #list-markerting .heading
+    {
+        margin-top: 70px;
+    }
+    .images-about
+    {
+        margin-right: -100px;
+    }
+    #cus-our
+    {
+        margin-bottom: 100px;
+    }
+    #cus-our .box-project
+    {
+        margin-bottom: -82px;
+    }
+    #banner-slider .wrap-text3 
+    {
+        top: 20%;
+    }
+    #list-career .career-content span
+    {
+        padding: 0 30px;
+    }
+    /*===============*/
+    #contact-icon .contact-img img, #contact-icon .contact-hover img
+    {
+        height: 170px;
+    }
+    #contact-wrap .con-a
+    {
+        padding-top: 50px;
+    }
+    /*==============*/
+    #banner-slider .ito
+    {
+        padding-top: 55px;
+    }
+    .check-list td
+    {
+        display: inline-block;
+        width: 50%;
+    }
+    .container-wrap, .box-text
+    {
+        width: 760px;
+    }
+    .wrap-order .title
+    {
+        text-align: center;
+    }
+    .box-1
+    {
+        width: 380px;
+    }
+    .list-trademark li {
+        width: 10%;
+    }
+    
+}
+
+@media (min-width: 1024px)
+{
+    #hotline
+    {
+        right:5px;
+        top: 31px;
+        position: absolute;
+    }
+    #languge
+    {
+        right:140px;
+        top: 31px;
+        position: absolute;
+    }
+}
+@media (min-width: 980px)
+{
+    .iteam-box .iteam-name
+    {
+        display: none;
+    }
+    .iteam-box:hover .iteam-name
+    {
+        display: block;
+    }
+    .iteam-box:hover .iteam-img .BWfade
+    {
+        display: none !important;
+    }
+    #iteamImg .description
+    {
+        width: 65%;
+    }
+    .news-box .news-name
+    {
+        margin: 30px 0 10px;
+    }
+    .news-box .description
+    {
+        margin: 20px 0;
+    }
+    #processMobile {
+        display: none;
+    }
+}
+@media (max-width: 1023px)  
+{
+    #hotline
+    {
+        right:0;
+        top: 5px;
+        position: absolute;
+    }
+    #languge
+    {
+        right: 140px;
+        top: 5px;
+        position: absolute;
+    }
+    #girlImg {
+        display: none;
+    }
+}
+@media (max-width: 979px)
+{
+    .iteam-box .iteam-img .BWfade
+    {
+        display: none !important;
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 980px)  
+{
+    #menu > li.first
+    {
+        margin-left: 160px;
+    }
+    #menu > li > a
+    {
+        padding: 0 10px;
+    }
+    .navbar-collapse.in
+    {
+        overflow: visible;
+        height: 40px;
+    }
+    .box-bar-site .col-sm-offset-1
+    {
+        margin-left: 5%;
+    }
+    .box-bar-site .col-sm-offset-2
+    {
+        margin-left: 15%;
+    }
+    .box-bar-site .col-sm-3
+    {
+        margin-left: -30px;
+        height: 200px;
+        width: 200px;
+    }
+   /* #menu > .active > a, #menu > .active > a:hover, #menu > .active > a:focus, #menu > li > a:hover, #menu > li > a:focus
+    {
+        padding: 0 6px;
+    }*/
+    #list-face
+    {
+        padding-right: 15px;
+    }
+    #new-project .col-md-4, #new-project .col-sm-4
+    {
+        padding: 0;
+    }
+    #list-markerting
+    {
+        margin: 0 auto 20px;
+        padding: 10px 0 50px;
+    }
+    #list-markerting .heading
+    {
+        margin-top: 20px;
+    }
+    #why-us a
+    {
+        padding: 10px 20px 10px 50px;
+    }
+    #banner-slider .wrap-text h2, #banner-slider .wrap-text3 h2
+    {
+        text-align: left;
+    }
+    #banner-slider .wrap-text3 , #banner-slider .wrap-text4
+    {
+        top: 5%;
+    }
+    #list-career .career-content span
+    {
+        padding: 0 20px;
+    }
+    /*===============*/
+    #contact-icon .contact-img img, #contact-icon .contact-hover img
+    {
+        height: 100px;
+    }
+    #contact-icon .contact-hover, #contact-icon .contact-hover a
+    {
+        font-size: 12px;
+    }
+    #contact-icon .wrapper strong
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #contact-icon .contact-img img, #contact-icon .contact-hover img
+    {
+        margin-top: 150px;
+    }
+    #contact-about .title-t
+    {
+        text-align: left;
+    }
+    #banner-slider .wrap-text .title-t
+    {
+        text-align: left;
+    }
+    #banner-slider .wrap-text .title-t, #banner-slider .wrap-text3 .title-t
+    {
+        text-align: left;
+    }
+    #banner-slider .ito
+    {
+        padding: 0;
+    }
+    #banner-slider .ito .description
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #banner-slider .ito .description p
+    {
+        margin-bottom: 5px;
+    }
+    .list-radio td, .check-list td
+    {
+        display: inline-block;
+        white-space: nowrap;
+        width: 50%;
+    }
+    .container-wrap, .box-text
+    {
+        width: 760px;
+    }
+    .wrap-order .title
+    {
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .box-1
+    {
+        width: 380px;
+    }
+    #serLogo .BWfade, #girlImg
+    {
+        display: none !important;
+    }
+    #serLogo a img
+    {
+        display: block !important;
+    }
+    .btn-box {
+        width: 100%;
+    }
+    
+    .wrap-host .col-md-4:hover, .wrap-host .col-md-4.current {
+        background: none;
+        border-right: none;
+    }
+    .wrap-host .col-md-4:hover h3, .wrap-host .col-md-4.current h3{
+        color: #000;
+    }
+    #processDesktop {
+        display: none;
+    }
+    #new-project .mask span
+    {
+        top: 12%;
+    }
+    .list-trademark li {
+        width: 16%;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)  
+{
+    #menu  .active > a, 
+    #menu  .active > a:hover, 
+    #menu  .active > a:focus,
+    #menu  li > a:hover,
+    #menu  li > a:focus 
+    {
+      background-color: #ff6600;
+      color: #fff;
+    }
+    #logo
+    {
+        padding:0;
+        margin: 0;
+    }
+    #header-top
+    {
+        height: 29px;
+    }
+    #menu
+    {
+        margin: 0;
+    }
+    #menu .dropdown
+    {
+        display: block;
+    }
+    #menu .show-m
+    {
+        display: none;
+    }
+    
+    #header-top
+    {
+        padding: 0;
+    }
+    
+    #faceboox-box, #list-box
+    {
+        padding: 10px 15px;
+    }
+    #address-box
+    {
+        padding: 20px 15px 10px;
+    }
+    .title-1
+    {
+        margin: 0 15px 20px;
+    }
+    #banner-run col-xs-6
+    {
+        margin: 15px 0;
+    }
+    #out-team-name .col-sm-4, #out-team-name .col-md-4
+    {
+        border-left: none;
+        border-bottom: solid 1px #fff;
+        padding: 0;
+    }
+    #out-team-name a
+    {
+        line-height: 55px;
+        padding: 5px 10px;
+    }
+    .title-why
+    {
+        text-align: left;
+        padding: 0 15px;
+    }
+    #why-us a
+    {
+        padding: 10px 15px 10px 40px;
+    }
+    #why-us a:hover
+    {
+        text-decoration: none;
+    }
+    #why-us .tr-2, #why-us .tr-3, #why-us .tr-4
+    {
+        margin-left: 0;
+    }
+    #why-us .col-sm-8
+    {
+        padding-right: 15px;
+    }
+    .images-what
+    {
+        text-align: center;
+    }
+    #new-project .box-project
+    {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .box-train ul
+    {
+        margin: 10px 0;
+    }
+    .tb-traning .tr-tran
+    {
+        padding: 5px 30px;
+    }
+    #icon-shoft
+    {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    .wrap-con
+    {
+        padding: 10px 0;
+    }
+    #banner-slider .wrap-text
+    {
+        color: #000;
+        position: relative;
+    }
+    #banner-slider .wrap-text .title-t
+    {
+        text-align: left;
+    }
+    #banner-slider .wrap-text2
+    {
+        top: 15%;
+    }
+    #banner-slider .wrap-text3 .title-t
+    {
+        text-align: left;
+    }
+    #banner-slider .wrap-text3 , #banner-slider .wrap-text4
+    {
+        top: 0;
+        position: relative;
+        text-align: center;
+    }
+    #banner-slider .wrap-text4 .title-t
+    {
+        text-align:center;
+    }
+    #banner-slider .wrap-text4 .description
+    {
+        padding: 0 0 30px;
+        line-height: 24px;
+    }
+    #wraprun .col-sm-3, #list-run2 .col-sm-4, .box-bar-site .col-sm-3
+    {
+        margin-left: 0;
+        text-align: center;
+        padding: 15px;
+    }
+    /*#wraprun, #list-run2
+    {
+        padding: 15px 0 0;
+    }    */
+    #list-career .col-sm-4
+    {
+        padding: 0 15px;
+        text-align: center;
+    }
+    #list-career a
+    {
+        display: inline-block;
+    }
+    /*#list-career .career-content, #list-career .career-name
+    {
+        left: 15px; 
+        right: 15px;
+    }*/
+    #about-acti h3
+    {
+        margin-top: 30px;
+    }
+    #search-menu .form-control
+    {
+        margin-top: 0;
+        margin-bottom: 7px;
+    }
+    /*===============*/
+    #contact-icon .contact-img img, #contact-icon .contact-hover img
+    {
+        margin-top: 0;
+    }
+    #contact-icon .contact-hover, #contact-icon .contact-img
+    {
+        height: 120px;
+    }
+    #contact-icon .contact-hover img, #contact-icon .contact-img img
+    {
+        height: 120px;
+    }
+    #contact-icon .box-contact
+    {
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #contact-icon .contact-hover img, #contact-icon .conact-text,  #contact-icon .contact-img img
+    {
+        display: inline-block;
+    }
+    #contact-icon .contact-img
+    {
+        text-align: center;
+    }
+    #contact-icon .conact-text 
+    {
+        padding-left:10px;
+    }
+    #contact-about .title-t
+    {
+        text-align: left;
+    }
+    #banner-slider .wrap-text2 .title-t, #banner-slider .wrap-text .tback
+    {
+        display: block;
+    }
+    #banner-slider .tback, #banner-slider .wrap-text .title-t
+    {
+        display: none;
+    }
+    #banner-slider .iteam .title-t
+    {
+        display: block;
+    }
+    #banner-slider .newsb .title-t
+    {
+        display: none;
+    }
+    #faceboox-box
+    {
+        overflow: hidden;
+    }
+    .ser-link
+    {
+        width: 30%;
+    }
+    .group-add
+    {
+        padding-bottom: 20px;
+    }
+    
+    .list-radio td, .check-list td
+    {
+        display: inline-block;
+        width: 100%;
+    }
+    .container-wrap, .box-1, .box-2, .box-text
+    {
+        overflow: hidden;
+        width: 380px;
+    }
+    .box-cons
+    {
+        height: auto;
+    }
+    .wrap-w, .wrap-w .box-cons
+    {
+        width: 100%;
+    }
+    .wrap-w .cons-img
+    {
+        display: none;
+    }
+    .item-box
+    {
+        margin-bottom: 10px;
+    }
+    #askBig .item-box
+    {
+        margin-bottom: 0;
+    }
+    #serLogo .BWfade
+    {
+        display: none !important;
+    }
+    #serLogo a img
+    {
+        display: block !important;
+    }
+    .map .getdiretion
+    {
+        width: 15%;
+    }
+    #askBig .img-box
+    {
+        height: 190px;
+    }
+    #productDetail {
+        padding: 20px ;
+        width: auto;
+    }
+    #productDetail .bx-controls-direction .bx-prev{
+        left: 0;
+    }
+    #productDetail .bx-controls-direction .bx-next{
+        right: 0;
+    }
+    #productDetail .pro-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #productDetail .pro-content h3{
+        font-size: 30px;
+    }
+    /*.pro-content .description {
+        height: 80px;
+        overflow: hidden;
+    }*/
+    
+    #wrapHostring1, #girlImg {
+        display: none;
+    }
+    #wrapHostring2 {
+        display: block;
+    }
+    .btn-box {
+        width: 100%;
+    }
+    
+    .wrap-host .col-md-4:hover, .wrap-host .col-md-4.current {
+        background: none;
+        border-right: none;
+    }
+    .wrap-host .col-md-4:hover h3, .wrap-host .col-md-4.current h3{
+        color: #000;
+    }
+    /*=============*/
+    #control-tabs li {
+        width: 100%
+    }
+    #control-tabs li a , #control-tabs li.first a , 
+    #control-tabs li a span,#control-tabs li.last a span,
+    #control-tabs li.current a , #control-tabs li.current a span,
+    #control-tabs li.next a, #control-tabs li.next a span , #control-tabs li.current.last a span{
+        background: #e9e9e9;
+        padding: 3px 15px;
+        text-decoration: none;
+        line-height: 20px;
+        width: 100%;
+    }
+        #control-tabs li.current a {
+            color: #f04c23;
+        }
+    .domain-content {
+        margin: 0;
+    }
+    .ser-process {
+        text-align: center;
+    }
+    .ser-process a{
+        display: inline-block;
+        float: none;
+        margin: 10px 0;
+        width: 25%;
+    }
+    #processDesktop {
+        display: none;
+    }
+    
+    .box-images, #new-project .project-name, #new-project .project-web
+    {
+        margin: 0 auto;
+        width: 390px;
+    }
+    #new-project .project-name, #new-project .project-web
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .list-trademark li {
+        width: 15%;
+    }
+}
+@media (max-width: 680px)  
+{
+    #wrapNews .col-xs-4
+    {
+        width: 100%;
+    }
+    .box-news .news-img img, .news-box .images-news, .news-box .news-content
+    {
+        float: none;
+        width: 100%;
+    }
+    .news-box .news-content
+    {
+        padding-top: 10px;
+    }
+    .more-detail a
+    {
+        float: none;
+    }
+    #cusCom .col-xs-4
+    {
+        width: 100%;
+    }
+    #cusCom .box-cus
+    {
+        margin: 20px 0;
+    }
+    #carousel-banner h3 a {
+        font-size: 42px;
+    }
+    #control-tabs li{
+        width: 100%;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px)  
+{
+    #logo
+    {
+        top: 110%;
+        height: 43px;
+        padding-top: 0;
+        padding-left: 0;
+        width: 149px;
+    }
+    #hotline
+    {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    #languge
+    {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    .cus-title-1
+    {
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .cus-title-2
+    {
+        font-size: 28px;
+        line-height: 24px;
+    }
+    #our-customers
+    {
+        padding: 0 15px;
+    }
+    
+    #our-customers .cus-title-2
+    {
+        padding-bottom: 0;
+    }
+    #faceboox-box
+    {
+        display: none;
+    }
+    .title-1
+    {
+        margin: 0 15px 20px;
+    }
+    #new-project .mask span
+    {
+        top: 15%;
+    }
+    #what-cus .title-2a
+    {
+        font-size: 28px;
+    }
+    .wraper-pager
+    {
+        padding-left: 0;
+    }
+    #phone-num .jumbotron .btn-bg
+    {
+        padding: 5px 20px;
+    }
+    #out-team-name a
+    {
+        min-height: 60px;
+        height: auto;
+        line-height: 22px;
+        padding: 5px 10px;
+    }
+    #why-us .why-name
+    {
+        margin-bottom: 5px;
+    }
+    .what-make .jumbotron
+    {
+        padding: 0;
+    }
+    .seo-about-img
+    {
+        padding-top: 20px;
+    }
+    .process-con-1, .process-con-2, .process-con-3, .process-con-4
+    {
+        margin-left: 0;
+    }
+    .wrap-process .pro-con
+    {
+        padding: 8px 10px;
+    }
+    .tb-traning .tr-tran, .tb-traning  th.tb-col-1
+    {
+        padding: 5px 20px;
+    }
+    #banner-slider .wrap-text2
+    {
+        color: #000;
+        top: 0;
+        position: relative;
+        padding: 20px 0;
+    }
+    .jumbotron
+    {
+        padding: 10px 10px 30px;
+    }
+    #list-career a
+    {
+        display: inline;
+    }
+    #list-career .career-content span
+    {
+        padding: 0 15px;
+    }
+    #list-career a strong
+    {
+        font-size: 16px;
+    }
+    /*===============*/
+    #contact-icon .contact-img img, #contact-icon .contact-hover img
+    {
+        margin: 0;
+    }
+    #contact-icon .contact-hover, #contact-icon .contact-img
+    {
+        height: 130px;
+        text-align: center;
+    }
+    #contact-icon .contact-hover img, #contact-icon .contact-img img
+    {
+        height: 80px;
+    }
+    #contact-icon .box-contact
+    {
+        padding: 5px;
+        margin: 0;
+    }
+    #contact-icon .conact-text
+    {
+        display: block;
+    }
+    #contact-icon .box-contact
+    {
+        background: #111;
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";/*IE8+*/  
+        filter: alpha(opacity=50); /* IE7 and lower */ 
+    }
+    #contact-icon .box-contact .contact-img
+    {
+        display: none !important;
+    }
+    #contact-icon .box-contact .contact-hover
+    {
+        display: block !important;
+    }
+    #contact-icon .contact-hover, #contact-icon .contact-hover a
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    #contact-icon .wrapper strong
+    {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #contact-icon .contact-img
+    {
+        text-align: center;
+    }
+    #contact-icon .contact-img img
+    {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    #search-menu a
+    {
+        padding: 0 8px;
+    }
+    #banner-slider .wrap-text2 .title-t
+    {
+        display: none;
+    }
+    #banner-slider .tback
+    {
+        display: block;
+    }
+    #seo-process .title-2
+    {
+        text-align: left;
+    }
+    .box-ser-link
+    {
+        margin: 0;
+    }
+    .ser-link
+    {
+        display: block;
+        width: 100%;
+    }
+    #serLogo
+    {
+        text-align:center;
+    }
+    #why-us .why-wrap .tra
+    {
+        padding-left: 20px;
+    }
+    .item-box, .box-text, .box-1, .box-2, .box-cons,.wrap-w .box-cons
+    {
+        width: 100% !important;
+    }
+    .container-wrap
+    {
+        padding-left: 15px ;
+        padding-right: 15px;
+        width: auto !important;
+    }
+    .img-box img
+    {
+        width: 100%;
+    }
+    .title
+    {
+        padding: 0;
+        margin: 30px 0 20px;
+    }
+    
+    .container-wrap .bx-wrapper .bx-controls-direction .bx-next   
+    {
+        left: auto;
+        right: 20px;
+    }
+    #carousel-banner h3 a,
+    #wrapShow h3 a {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    #tabNav li{
+        width: 100%;
+    }
+    .tb-domain td , .tb-domain th, .tb-domain .col-1{
+        border: solid 1px #bbb;
+    }
+    .list-trademark li {
+        width: 25%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 420px)  
+{
+    #askBig .name-tit a
+    {
+        font-size: 16px;
+    }
+    .title
+    {
+        font-size: 24px;
+    }
+    .img-box img
+    {
+        height: 190px;
+        width: auto;
+    }
+    #askBig .name-tit
+    {
+        margin: 10px 0 5px;
+    }
+    #askBig .box-content
+    {
+        clear: both;
+    }
+    #carousel-banner .carousel-caption,
+    #wrapShow .carousel-caption
+    {
+        padding: 0;
+        top: 3%;
+    }
+    #carousel-banner .carousel-caption .banner-content,
+    #wrapShow .carousel-caption .banner-content {
+           margin-top: 25px;
+    }
+    #carousel-banner .banner-content .description,
+    #wrapShow .banner-content .description {
+        display: none;
+    }
+    .list-check td {
+        display: inline-block;
+        width: 100%;
+    }
+    #list-box .col-xs-6
+    {
+        width: 100%;
+    }
+    
+    .view-first
+    {
+        display: block;
+    }
+    
+    .box-images, #new-project .project-name, #new-project .project-web
+    {
+        margin: 0 auto;
+        width: auto;
+    }
+    #new-project .project-name, #new-project .project-web
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .list-trademark li {
+        width: 32%;
+    }
+}
