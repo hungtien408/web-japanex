@@ -276,11 +276,11 @@
                     <br />
                     Ngân Hàng <b>VCB (VIETCOMBANK)</b>
                     <br />
-                    Tên Tài Khoản: Đặng Trần Bá Tước
+                    Tên Tài Khoản: TRAN THI HAI NAM
                     <br />
-                    Số Tài Khoản: 007100364733
+                    Số Tài Khoản: 0481000646931
                     <br />
-                    Chi Nhánh: Hồ Chí Minh
+                    Chi Nhánh: BIEN HOA, TAN MAI
                     <br />
                 </p>
             </div>

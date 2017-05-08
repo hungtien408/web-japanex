@@ -35,14 +35,14 @@
                 <thead>
                     <tr>
                         <th>Tỷ giá</th>
-                        <th>Thời gian cập nhật</th>
+                        <th class="hidden">Thời gian cập nhật</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
                             <asp:Label ID="lblTyGIa" runat="server" Text=""></asp:Label></td>
-                        <td><asp:Label ID="lblNgay" runat="server" Text=""></asp:Label></td>
+                        <td class="hidden"><asp:Label ID="lblNgay" runat="server" Text=""></asp:Label></td>
                     </tr>
                 </tbody>
             </table>
