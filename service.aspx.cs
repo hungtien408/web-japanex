@@ -13,10 +13,16 @@ public partial class service : System.Web.UI.Page
     {
 
     }
+    protected void DropDownList_DataBound(object sender, EventArgs e)
+    {
+        var cbo = (DropDownList)sender;
+        cbo.Items.Insert(0, new ListItem(""));
+    }
     protected void txtSoKg_TextChanged(object sender, EventArgs e)
     {
         int gtdh = !string.IsNullOrEmpty(txtGiaTriDonHang.Text) ? Convert.ToInt32(txtGiaTriDonHang.Text) : 0;
-        int fee = Estimate(Convert.ToDouble(txtSoKg.Text), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
+        //int fee = Estimate(Convert.ToDouble(txtSoKg.Text), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
+        int fee = Estimate(Convert.ToDouble(dropSoKg.SelectedValue), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
 
         lblMoneyJP.Text = (string.Format("{0:##,###.##}", fee) + " JPY");
         lblMoneyVN.Text = ("(" + string.Format("{0:##,###.##}", fee * Convert.ToDouble(Session["Exrate"].ToString())) + " VNĐ)");
@@ -24,7 +30,8 @@ public partial class service : System.Web.UI.Page
     protected void dropVanChuyen_SelectedIndexChanged(object sender, EventArgs e)
     {
         int gtdh = !string.IsNullOrEmpty(txtGiaTriDonHang.Text) ? Convert.ToInt32(txtGiaTriDonHang.Text) : 0;
-        int fee = Estimate(Convert.ToDouble(txtSoKg.Text), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
+        //int fee = Estimate(Convert.ToDouble(txtSoKg.Text), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
+        int fee = Estimate(Convert.ToDouble(dropSoKg.SelectedValue), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
 
         lblMoneyJP.Text = (string.Format("{0:##,###.##}", fee) + " JPY");
         lblMoneyVN.Text = ("(" + string.Format("{0:##,###.##}", fee * Convert.ToDouble(Session["Exrate"].ToString())) + " VNĐ)");
@@ -42,7 +49,8 @@ public partial class service : System.Web.UI.Page
             pvc = Convert.ToInt32(vc[0]["Price"].ToString());
         }
 
-        var tq = cmd.ClearanceSelectByKg(Convert.ToDouble(txtSoKg.Text)).DefaultView;
+        //var tq = cmd.ClearanceSelectByKg(Convert.ToDouble(txtSoKg.Text)).DefaultView;
+        var tq = cmd.ClearanceSelectByKg(Convert.ToDouble(dropSoKg.SelectedValue)).DefaultView;
 
         if (tq != null)
         {
@@ -72,7 +80,8 @@ public partial class service : System.Web.UI.Page
     protected void txtGiaTriDonHang_TextChanged(object sender, EventArgs e)
     {
         int gtdh = !string.IsNullOrEmpty(txtGiaTriDonHang.Text) ? Convert.ToInt32(txtGiaTriDonHang.Text) : 0;
-        int fee = Estimate(Convert.ToDouble(txtSoKg.Text), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
+        //int fee = Estimate(Convert.ToDouble(txtSoKg.Text), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
+        int fee = Estimate(Convert.ToDouble(dropSoKg.SelectedValue), Convert.ToInt32(dropVanChuyen.SelectedValue), gtdh);
 
         lblMoneyJP.Text = (string.Format("{0:##,###.##}", fee) + " JPY");
         lblMoneyVN.Text = ("(" + string.Format("{0:##,###.##}", fee * Convert.ToDouble(Session["Exrate"].ToString())) + " VNĐ)");

@@ -88,6 +88,24 @@ public class JapanexCommon
         }
     }
 
+    public DataTable WeightSelectAll()
+    {
+        try
+        {
+            var dt = new DataTable();
+            var scon = new SqlConnection(connectionString);
+            var cmd = new SqlCommand("usp_Weights_SelectAll", scon);
+            cmd.CommandType = CommandType.StoredProcedure;
+            var sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            return dt;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+
     public DataTable PriceTransporterSelectByKg(double kg, string ctvc)
     {
         try

@@ -22,7 +22,7 @@
                 if ($('.gia-tri').hasClass('show')) {
                     $('.gia-tri').removeClass('show');
                     $("[id$='txtGiaTriDonHang']").val("");
-                    var sokg = $("[id$='txtSoKg']").val();
+                    var sokg = $("[id$='dropSoKg']").val();
                     if (sokg > 30) {
                         $("[id$='lblMoneyJP']").text("0 JPY");
                         $("[id$='lblMoneyVN']").text("(0 VNĐ)");
@@ -97,8 +97,45 @@
                     $("[id$='lblMoneyVN']").text("(0 VNĐ)");
                 }
             });
+            $("[id$='dropSoKg']").on('change', function () {
+                var sokg = $(this).val();
+                if (sokg > 30) {
+                    $("[id$='lblMoneyJP']").text("0 JPY");
+                    $("[id$='lblMoneyVN']").text("(0 VNĐ)");
+                    alert("Vui lòng nhập số kg dưới 30kg")
+                }
+                else if (sokg != "" && sokg != 0) {
+                    var gtdh = $("[id$='txtGiaTriDonHang']").val();
+                    if (typeof (gtdh) === "undefined") {
+                        gtdh = 0;
+                    } else {
+                        gtdh = $("[id$='txtGiaTriDonHang']").val();
+                    }
+                    var tg = parseInt($("#exrate").text());
+                    var vanchuyen = $("[id$='dropVanChuyen'] option:selected").val();
+                    $.ajax({
+                        type: "POST",
+                        url: "default.aspx/LoadData",
+                        data: "{'SoKg': '" + sokg + "','GTDH': '" + gtdh + "','VanChuyen': '" + vanchuyen + "'}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        async: true,
+                        cache: false,
+                        success: function (msg) {
+                            if (msg.d != "") {
+                                $("[id$='lblMoneyJP']").text(currency_format(msg.d, 0) + " JPY");
+                                var vnd = (msg.d) * tg;
+                                $("[id$='lblMoneyVN']").text("(" + currency_format(vnd, 0) + " VNĐ)");
+                            }
+                        }
+                    });
+                } else {
+                    $("[id$='lblMoneyJP']").text("0 JPY");
+                    $("[id$='lblMoneyVN']").text("(0 VNĐ)");
+                }
+            })
             $("[id$='txtGiaTriDonHang']").keyup(function () {
-                var sokg = $("[id$='txtSoKg']").val();
+                var sokg = $("[id$='dropSoKg']").val();
                 if (sokg > 30) {
                     $("[id$='lblMoneyJP']").text("0 JPY");
                     $("[id$='lblMoneyVN']").text("(0 VNĐ)");
@@ -150,7 +187,7 @@
             });
             $("[id$='dropVanChuyen']").change(function () {
                 $("[id$='dropVanChuyen'] option:selected").each(function () {
-                    var sokg = $("[id$='txtSoKg']").val();
+                    var sokg = $("[id$='dropSoKg']").val();
                     if (sokg > 30) {
                         $("[id$='lblMoneyJP']").text("0 JPY");
                         $("[id$='lblMoneyVN']").text("(0 VNĐ)");
@@ -217,9 +254,11 @@
                             <%--<asp:RadNumericTextBox ID="txtSoKg" runat="server" Type="Number" AutoPostBack="true" OnTextChanged="txtSoKg_TextChanged">
                                 <NumberFormat AllowRounding="false" />
                             </asp:RadNumericTextBox>--%>
-                            <asp:RadNumericTextBox ID="txtSoKg" runat="server" Type="Number" MinValue="0" MaxValue="30">
+                            <%--<asp:RadNumericTextBox ID="txtSoKg" runat="server" Type="Number" MinValue="0" MaxValue="30">
                                 <NumberFormat AllowRounding="false" />
-                            </asp:RadNumericTextBox>
+                            </asp:RadNumericTextBox>--%>
+                            <asp:DropDownList ID="dropSoKg" runat="server" DataSourceID="odsWeight" DataTextField="Name" DataValueField="Value" OnDataBound="DropDownList_DataBound"></asp:DropDownList>
+                            <asp:ObjectDataSource ID="odsWeight" runat="server" SelectMethod="WeightSelectAll" TypeName="JapanexCommon"></asp:ObjectDataSource>
                             <%--<asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Vui lòng nhập số kg dưới 30kg" MinimumValue="0" MaximumValue="30" ControlToValidate="txtSoKg" Display="Dynamic"></asp:RangeValidator>--%>
                         </div>
                         <div class="form-group">
