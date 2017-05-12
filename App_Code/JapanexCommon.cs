@@ -212,8 +212,9 @@ public class JapanexCommon
             }
             SendSuccess = true;
         }
-        catch
+        catch(Exception ex)
         {
+            ex.ToString();
             SendSuccess = false;
         }
         return SendSuccess;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -28,6 +29,19 @@ public partial class site : System.Web.UI.MasterPage
     {
         string msg = "<h3>JAPANEX: Đăng ký nhận thông tin qua Email</h3><br/>";
         msg += "<b>Email: </b>" + txtNhanEmail.Text.Trim().ToString() + "<br />";
+        //if (ConfigurationManager.AppSettings["PasswordMail"] != null && ConfigurationManager.AppSettings["UserMail"] != null)
+        //{
+        //    string UserMail = ConfigurationManager.AppSettings["UserMail"].ToString();
+        //    string PasswordMail = ConfigurationManager.AppSettings["PasswordMail"].ToString();
+        //    if (!string.IsNullOrEmpty(UserMail) && !string.IsNullOrEmpty(PasswordMail))
+        //    {
+        //        //cmd.SendMail("mail.japanex.net", 587, "contact@japanex.net", "Betterlife020", "contact@japanex.net", "", "Đăng ký nhận thông tin qua Email JAPANEX", msg, false);
+        //        cmd.SendMail("mail.japanex.net", 587, UserMail, PasswordMail, UserMail, "", "Đăng ký nhận thông tin qua Email JAPANEX", msg, false);
+        //        ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "runtime", " $(document).ready(function () {alert('Cám ơn bạn đã Đăng ký nhận thông tin qua Email JAPANEX !')});", true);
+        //        txtNhanEmail.Text = "";
+        //    }
+        //}
+
         cmd.SendMail("mail.japanex.net", 587, "contact@japanex.net", "Betterlife020", "contact@japanex.net", "", "Đăng ký nhận thông tin qua Email JAPANEX", msg, false);
         ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "runtime", " $(document).ready(function () {alert('Cám ơn bạn đã Đăng ký nhận thông tin qua Email JAPANEX !')});", true);
         txtNhanEmail.Text = "";
